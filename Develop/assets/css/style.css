@@ -1,141 +1,201 @@
+/* Universal selector, sets box-sizing of whole document to border-box and sets the padding and margin of all elements on the page to 0 */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Selector for body element(s). Changes background color of  */
 body {
     background-color: #d9dcd6;
 }
-/* Navbar styling */
+
+/* Selector for header element(s). */
 header {
+/*   Adds padding(space around) on all header elements    */
     padding: 20px;
+/*   Applies font to all header elements   */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/*   Modifies color and background color of all header elements   */
     background-color: #2a607c;
     color: #ffffff;
 }
 
+/* Selector for h1 elements that are children of header elements */
 header h1 {
+/*   Sets the display property of h1 elements to be inline-block.
+    -Allows to set a width and height on the element.
+    -Top and bottom margins/paddings are respected (display:inline would modify these values).
+    -Does not add a line-break after the element so the element can sit next to other elements (display:inline adds a line-break after the element)
+    source: https://www.w3schools.com/css/css_inline-block.asp
+*/
     display: inline-block;
+/*   Applies font size   */
     font-size: 48px;
 }
 
+/* Selector for the seo id tag */
 #seo {
+/*   Modifies color of 'seo' in Horiseon   */
     color: #d9dcd6;
 }
 
+/* Selector for section elements that are children of header elements */
 header section {
+/*   Modifies top padding and right side margin for section elements   */
     padding-top: 15px;
     margin-right: 20px;
+/*   Sets the positioning to float to the right (aligned on the right side of the screen)   */
     float: right;
+/*   Modifies font type & size for section elements   */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
+/* Selector for ul elements that are children of section elements that are children of header elements */
 header section ul {
+/*   Sets the list-style-type to none which removes all bullet points from the list items.    */
     list-style-type: none;
 }
 
+/* Selector for li elements that are children of ul elements that are children of section elements that are children of header elements */
 header section ul li {
+/*   Sets display type to be inline-block (see header h1 selector)   */
     display: inline-block;
+/*   Sets the left side margin on li elements   */
     margin-left: 25px;
 }
 
+/* Selector for all a(link) elements  */
 a {
+/*   Sets the color of link elements & sets the text decoration of link elements to be none   */
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Selector for all p(paragraph) elements */
 p {
+/*   Sets the font size of paragaph elements   */
     font-size: 16px;
 }
 
 /* Main content styling */
+/* Selector for main element(s) */
 main {
+/*   Sets the width of the main element to be 75% of the web page   */
     width: 75%;
+/*   Sets the display type and left side margin for the main element   */
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Selector for the hero class (image under the navbar) */
 .hero {
+/*   Sets the size of the image and the bottom margin   */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
+/*   Sets the background-image link   */
     background-image: url("../images/digital-marketing-meeting.jpg");
+/*   Sets the background-size to cover(makes the image cover the entire area of the element).
+     background-position:center sets the position of the background image to be centered in the element.
+*/
     background-size: cover;
     background-position: center;
 }
 
+/* Selector for the float-left class */
 .float-left {
+/*   Sets the positioning of elements to float to the left & sets the left side margin of said elements   */
     float: left;
     margin-right: 25px;
 }
 
+/* Selector for the float-right class */
 .float-right {
+/*   Does the same thing as the float-left class selector but tells the element to float to the right   */
     float: right;
     margin-left: 25px;
 }
 
  /* Benefits styling */
+/* Selector for the benefits class */
 .benefits {
+/*   Sets the padding and right side margin    */
     margin-right: 20px;
     padding: 20px;
+/*  Sets the clear property to control the flow next to floated elements.   */
     clear: both;
     float: right;
+/*  Sets the width and height  */
     width: 20%;
     height: 100%;
+/*  Sets the font and background color   */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
+/* Selector for the benefit-lead class */
 .benefit-lead {
+/*  Sets the bottom margin and the color   */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Selector for the benefit-brand class */
 .benefit-brand {
+/*  Sets the bottom margin and the color   */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Selector for the benefit-cost class */
 .benefit-cost {
+/*  Sets the bottom margin and the color   */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Selector for h3 elements whose parents have the benefit-lead class */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Selector for h3 elements whose parents have the benefit-brand class */
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Selector for h3 elements whose parents have the benefit-cost class */
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Selector for img elements whose parents have the benefit-lead class */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Selector for img elements whose parents have the benefit-brand class */
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Selector for img elements whose parents have the benefit-cost class */
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* Selector for the search-engine-optimization class */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -145,7 +205,9 @@ main {
     color: #ffffff;
 }
 
+/* Selector for the online-reputation-management class */
 .online-reputation-management {
+/*   Sets bottom margin, padding, height, font-family, and color properties   */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -154,7 +216,9 @@ main {
     color: #ffffff;
 }
 
+/* Selector for the social-media-marketing class */
 .social-media-marketing {
+/*   Sets bottom margin, padding, height, font-family, and color properties   */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -163,42 +227,58 @@ main {
     color: #ffffff;
 }
 
+/* Selector for img elements that are children of elements with the search-engine-optimization class */
 .search-engine-optimization img {
+/*   Sets max height of img   */
     max-height: 200px;
 }
 
+/* Selector for img elements that are children of elements with the online-reputation-management class */
 .online-reputation-management img {
+/*   Sets max height of img   */
     max-height: 200px;
 }
 
+/* Selector for img elements that are children of elements with the social-media-marketing class */
 .social-media-marketing img {
+/*   Sets max height of img   */
     max-height: 200px;
 }
 
+/* Selector for h2 elements that are children of elements with the search-engine-optimization class */
 .search-engine-optimization h2 {
+/*   Sets bottom margin and font size of h2   */
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Selector for h2 elements that are children of elements with the online-reputation-management class */
 .online-reputation-management h2 {
+/*   Sets bottom margin and font size of h2   */
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Selector for h2 elements that are children of elements with the social-media-marketing class */
 .social-media-marketing h2 {
+/*   Sets bottom margin and font size of h2   */
     margin-bottom: 20px;
     font-size: 36px;
 }
 
 /* Footer styling */
-
+/* Selector for footer elements */
 footer {
+/*   Sets padding, clear property, font-family, and text-alignment for footer element(s)   */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/*   Aligns text to the center of the element   */
     text-align: center;
 }
 
+/* Selecter for h2 elements that are children of footer elements */
 footer h2 {
+/*   Sets font size   */
     font-size: 20px;
 }
