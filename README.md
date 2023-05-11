@@ -4,8 +4,8 @@
 The original README for this assignment is kept in the assets folder. When trying to deploy the webpage to github, github was displaying the contents of the README file
 instead of the index.html file. -This issue is because the README file is being recognized as the root file rather than index.html
 
-## link to repository: [https://github.com/Douped/Module-1-Challenge/](https://github.com/Douped/Module-1-Challenge)
-## link to github website: [https://douped.github.io/Module-1-Challenge/ ](https://douped.github.io/Module-1-Challenge)
+## link to repository: [https://github.com/Douped/Horiseon-Marketing](https://github.com/Douped/Horiseon-Marketing) 
+## link to github website: [https://douped.github.io/Horiseon-Marketing/](https://douped.github.io/Horiseon-Marketing/)
 
 ## Screenshot:
 
